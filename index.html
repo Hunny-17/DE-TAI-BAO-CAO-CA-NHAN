@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United Fan Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+<header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/MU.png" alt="Manchester United Logo">
+            </div>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="https://www.manutd.com/">Trang chủ</a></li>
+                    <li><a href="#lich-thi-dau">Lịch thi đấu</a></li>
+                    <li><a href="#doi-hinh">Đội hình</a></li>
+                    <li><a href="#tin-tuc">Tin tức</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#lien-he">Liên hệ</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search">
+                    <span class="search-icon" onclick="toggleSearch()">🔍</span>
+					<div id="searchResults" class="search-results"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-section">
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Manchester United Banner">
+        </div>
+    </div>
+
+    <main>
+        <!-- ĐỘI HÌNH -->
+        <h2 class="section-title" id="doi-hinh">ĐỘI HÌNH</h2>
+        <section class="content-grid lineup-grid">
+            <div class="grid-item" data-modal="news1">
+                <img src="images/Lineup.jpg" alt="MU vs LIV">
+                <h3>MU VS LIV</h3>
+                <p>CUNHA TRỞ LẠI</p>
+            </div>
+            <div class="grid-item" data-modal="news2">
+                <img src="images/Lineup2.jpg" alt="MU vs SUN">
+                <h3>MU VS SUN</h3>
+                <p>LAMMENS XUẤT PHÁT</p>
+            </div>
+        </section>
+
+        <!-- LỊCH THI ĐẤU -->
+        <h2 class="section-title" id="lich-thi-dau">LỊCH THI ĐẤU</h2>
+        <div class="fixture-carousel">
+            <div class="fixture-grid">
+                <div class="grid-item fixture-item">
+                    <img src="images/LineupSunder.jpg" alt="Sunderland">
+                    <h3>United vs Sunderland</h3>
+                    <p>04/10/2025, 21:00, Old Trafford</p>
+                    <a href="https://www.youtube.com/watch?v=SsWmHmzbgzo" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Matching.jpg" alt="Liverpool">
+                    <h3>United vs Liverpool</h3>
+                    <p>20/10/2025, 22:30, Anfield</p>
+                    <a href="https://www.youtube.com/watch?v=U_ygjQ6Ypro" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Bright.png" alt="Brighton">
+                    <h3>United vs Brighton</h3>
+                    <p>25/10/2025, 23:30, Old Trafford</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Nott.png" alt="Forest">
+                    <h3>Forest vs United</h3>
+                    <p>01/11/2025, 15:00, City Ground</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Tot.png" alt="Tottenham">
+                    <h3>Tottenham vs United</h3>
+                    <p>08/11/2025, 22:00, Tottenham Stadium</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Eve.png" alt="Everton">
+                    <h3>United vs Everton</h3>
+                    <p>25/11/2025, 03:00, Old Trafford</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Cry.png" alt="Crystal Palace">
+                    <h3>Crystal Palace vs United</h3>
+                    <p>30/11/2025, 03:00, Selhurst</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Wes.png" alt="West Ham">
+                    <h3>United vs West Ham</h3>
+                    <p>05/12/2025, 03:00, Old Trafford</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+                <div class="grid-item fixture-item">
+                    <img src="images/Wov.png" alt="Wolves">
+                    <h3>Wolves vs United</h3>
+                    <p>09/12/2025, 03:00, Molineux</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="highlight-link" target="_blank">Highlight</a>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)">‹</button>
+                <button class="carousel-btn next-btn" onclick="moveCarousel(1)">›</button>
+            </div>
+        </div>
+
+        <!-- TIN TỨC -->
+        <h2 class="section-title" id="tin-tuc">TIN TỨC</h2>
+        <div class="news-section">
+            <div class="news-item horizontal">
+                <img src="images/Amorim.png" alt="Amorim">
+                <div class="news-content">
+                    <h3>Ruben: <br>CHIẾN THẮNG DÀNH CHO NGƯỜI HÂM MỘ</h3>
+                    <p>Amorim phỏng vấn đặc biệt sau trận đấu.</p>
+                    <a href="https://www.youtube.com/watch?v=Ci3yW-Vp5Fc" class="video-btn" target="_blank">Video</a>
+                </div>
+            </div>
+            <div class="news-item horizontal">
+                <img src="images/Harry.jpg" alt="Harry Maguire">
+                <div class="news-content">
+                    <h3>Maguire: <br>ĐỘNG LỰC CỦA CHÚNG TÔI</h3>
+                    <p>Chiến thắng tràn đầy tính thúc đẩy.</p>
+                    <a href="https://www.youtube.com/watch?v=KBmllaqPZgU" class="video-btn" target="_blank">Video</a>
+                </div>
+            </div>
+		<div class="news-item horizontal">
+                <img src="images/WinLiv.jpg" alt="Amorim">
+                <div class="news-content">
+                    <h3>MU VS LIV: <br>CHIẾN THẮNG DÀNH CHO NGƯỜI HÂM MỘ XỨNG ĐÁNG</h3>
+                    <p>TRẬN ĐẤU MÃN NHÃN GIỮA HAI ĐẠI KÌNH ĐỊCH.</p>
+                    <a href="https://www.youtube.com/watch?v=U_ygjQ6Ypro" class="video-btn" target="_blank">Video</a>
+                </div>
+            </div>
+			<div class="news-item horizontal">
+                <img src="images/Sunder.jpg" alt="Amorim">
+                <div class="news-content">
+                    <h3>MU VS SUN: <br>CHIẾN THẮNG KHỞI SẮC CHO QUỶ ĐỎ</h3>
+                    <p>TRẬN ĐẤU MANG DẤU ẤN CẢU CÁC TÂN BINH.</p>
+                    <a href="https://www.youtube.com/watch?v=SsWmHmzbgzo" class="video-btn" target="_blank">Video</a>
+                </div>
+            </div>
+		</div>
+
+        <!-- HIGHLIGHTS -->
+        <h2 class="section-title" id="highlights">HIGHLIGHTS</h2>
+        <section class="content-grid">
+            <div class="grid-item video-item" data-link="https://www.youtube.com/watch?v=SsWmHmzbgzo">
+                <img src="images/Matching.jpg" alt="Sunderland">
+                <h3>Highlight vs Sunderland</h3>
+                <p>Xem highlights gần nhất.</p>
+            </div>
+            <div class="grid-item video-item" data-link="https://www.youtube.com/watch?v=U_ygjQ6Ypro">
+                <img src="images/Matching.jpg" alt="Liverpool">
+                <h3>Highlight vs Liverpool</h3>
+                <p>Chìa khóa giải quyết trận đấu.</p>
+            </div>
+            <div class="grid-item video-item full-width" data-link="https://www.youtube.com/watch?v=U_ygjQ6Ypro">
+                <img src="images/Matching.jpg" alt="Video Highlights">
+                <h3>Video Highlights</h3>
+                <p>Khoảnh khắc được lưu trọn đầy đủ.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FORM LIÊN HỆ -->
+    <section class="contact-section" id="lien-he">
+        <h2 class="section-title">LIÊN HỆ</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group"><input type="text" placeholder="Họ và tên *" required></div>
+                <div class="form-group"><input type="email" placeholder="Email *" required></div>
+                <div class="form-group"><input type="text" placeholder="Tiêu đề *"></div>
+                <div class="form-group full"><textarea placeholder="Nội dung *" rows="5" required></textarea></div>
+                <button type="submit" class="submit-btn">GỬI TIN NHẮN</button>
+            </form>
+            <div class="contact-info">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <p><strong>Website Fan MU</strong></p>
+                <p>Email: markleon0612@example.com</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Facebook: <a href="#">@Manchester United Supporters Club in VietNam</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+ <footer class="footer">
+    <div class="social-icons">
+        <a href="https://www.facebook.com/MUSVNfanpage" target="_blank" title="Facebook">
+            <img src="images/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://x.com/ManUtd" target="_blank" title="X">
+            <img src="images/X.png" alt="X" />
+        </a>
+        <a href="https://www.instagram.com/manchesterunited/" target="_blank" title="Instagram">
+            <img src="images/Instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/@manutd" target="_blank" title="YouTube">
+            <img src="images/Youtube.png" alt="YouTube" />
+        </a>
+    </div>
+    <p>&copy; 2025 Fan Manchester United. TRANG WEB NHẰM MỤC ĐÍCH HỌC TẬP.</p>
+</footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="Modal Image" class="modal-image">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <div id="scrollToTop" class="scroll-to-top">∧</div>
+</body>
+</html>
